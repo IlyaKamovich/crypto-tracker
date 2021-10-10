@@ -1,0 +1,270 @@
+.coins {
+  display: flex;
+  justify-content: center;
+
+  &__content {
+    max-width: 1920px;
+    width: 95%;
+
+    &-error {
+      color: #fff;
+      font-size: 41px;
+      font-weight: 600;
+      height: calc(100vh - 150px);
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 50px;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 80px;
+      border-bottom: 1px solid #2e2e2e;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &:first-child {
+        &:hover {
+          cursor: default;
+          border-radius: none;
+          border-bottom: 1px solid #2e2e2e;
+          background: none;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: #171718;
+        border-radius: 5px;
+        border-bottom: none;
+      }
+
+      &__id {
+        width: 30px;
+        padding-left: 15px;
+        color: #fff;
+        font-size: 23px;
+        font-weight: 500;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      &__name {
+        color: #fff;
+        width: 270px;
+        font-size: 21px;
+      }
+
+      &__symbol {
+        text-align: right;
+        color: #fff;
+        width: 60px;
+        font-size: 21px;
+      }
+
+      &__price {
+        text-align: right;
+        color: #fff;
+        width: 150px;
+        margin-left: 70px;
+        margin-right: 30px;
+        font-size: 21px;
+
+        &-change {
+          color: #fff;
+          width: 120px;
+          margin-right: 30px;
+          font-size: 21px;
+          text-align: right;
+          margin-left: auto;
+        }
+      }
+
+      &__volume {
+        color: #fff;
+        font-size: 21px;
+        text-align: right;
+        width: 220px;
+        margin-left: 100px;
+      }
+
+      &__marketcap {
+        margin-left: 200px;
+        text-align: right;
+        width: 220px;
+        color: #fff;
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+.red {
+  color: #ff3838 !important;
+}
+
+.green {
+  color: #32ff7e !important;
+}
+
+@media screen and (max-width: 1620px) {
+  .coins {
+    &__content {
+      &-item {
+        &__marketcap {
+          margin-left: 100px;
+        }
+
+        &__volume {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1435px) {
+  .coins {
+    &__content {
+      &-item {
+        &__marketcap {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .coins {
+    &__content {
+      &-item {
+        &__marketcap {
+          margin-left: 20px;
+        }
+
+        &__price {
+          margin-left: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .coins {
+    &__content {
+      &-item {
+        &__id {
+          font-size: 21px;
+        }
+
+        &__name {
+          font-size: 17px;
+          width: 250px;
+        }
+
+        img {
+          width: 35px;
+          height: 35px;
+          margin-left: 20px;
+          margin-right: 15px;
+        }
+
+        &__symbol {
+          font-size: 17px;
+        }
+
+        &__price {
+          margin-left: 0px;
+          margin-right: 10px;
+          font-size: 17px;
+
+          &-change {
+            font-size: 17px;
+          }
+        }
+
+        &__volume {
+          font-size: 17px;
+        }
+
+        &__marketcap {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .coins {
+    &__content {
+      &-item {
+        &__id {
+          font-size: 17px;
+        }
+
+        &__name {
+          font-size: 14px;
+          width: 210px;
+        }
+
+        img {
+          width: 35px;
+          height: 35px;
+          margin-left: 10px;
+          margin-right: 15px;
+        }
+
+        &__symbol {
+          font-size: 14px;
+        }
+
+        &__price {
+          width: 100px;
+          margin-left: 0px;
+          margin-right: 10px;
+          font-size: 14px;
+
+          &-change {
+            font-size: 14px;
+          }
+        }
+
+        &__volume {
+          width: 140px;
+          font-size: 14px;
+        }
+
+        &__marketcap {
+          width: 150px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .coins {
+    &__content {
+      &-item {
+        &__symbol {
+          display: none;
+        }
+      }
+    }
+  }
+}
