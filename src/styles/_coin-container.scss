@@ -1,3 +1,59 @@
+.header {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    max-width: 1920px;
+    width: 95%;
+
+    .search,
+    .sort {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 30px;
+
+      label {
+        color: #fff;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select {
+        margin-top: 5px;
+        height: 40px;
+        min-width: 300px;
+        width: 100%;
+        padding-left: 10px;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid transparent;
+        font-size: 19px;
+        font-weight: 500;
+
+        &:focus {
+          border: 1px solid #007bff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    height: 200px;
+
+    &__content {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+}
+
 .coins {
   display: flex;
   justify-content: center;
