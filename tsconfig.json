@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "rootDirs": ["src/"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": "./",
+    "paths": {
+      "Components": ["src/components"],
+      "Constants": ["src/constants"],
+      "Assets": ["src/assets"],
+      "Pages": ["src/pages"],
+      "Styles": ["src/styles"],
+      "Helpers": ["src/helpers"],
+      "Hooks": ["src/hooks"],
+      "Models": ["src/models"]
+    },
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src/**/*", "../../packages/**/*", "custom.d.ts"]
+}
+
+

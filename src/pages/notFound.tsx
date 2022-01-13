@@ -1,13 +1,13 @@
-import React from "react";
-import { useHistory } from "react-router";
-import { HiArrowSmLeft } from "react-icons/hi";
+import React from 'react';
+import { useHistory } from 'react-router';
+import { HiArrowSmLeft } from 'react-icons/hi';
 
-import "Styles/_not-found.scss";
+import 'Styles/_not-found.scss';
 
-const NotFound = () => {
+const NotFound: React.FC = () => {
   const history = useHistory();
 
-  const onClickButtonBackHome = () => history.push("/");
+  const onClickButtonBackHome = (): void => history.push('/');
 
   return (
     <div className="notFound">

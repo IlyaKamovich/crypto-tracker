@@ -9,7 +9,6 @@
 - Search by token name
 - Sorted by selling price
 - Simple pagination
-- Firebase for hosting
 
 ## Installation
 
